@@ -1,0 +1,89 @@
+i<style>
+.itemadd
+{
+border:1.5px solid black;
+}
+.itemrem{
+border:1.5px solid black;
+}
+.dprem{
+border:1.5px solid black;
+}
+.button
+{
+float:right;
+}
+h1
+{
+text-align:center;
+font-style:italic;
+background-color:black;
+opacity:0.8;
+color:white;
+}
+h2{
+text-align:left;
+font-style:italic;
+background-color:black;
+opacity:0.8;
+color:white;
+}
+a
+{
+color:white;
+text-decoration:none;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<title>Welcome Admin</title>
+  <head>
+    <meta charset="utf-8">
+  <body style="background-image:url(admindashboard.png);">
+  		<h1>Welcome Admin</h1>
+  	    <ul>
+  	     <li><h2>View Item</h2></li>
+  		 <div class="itemadd">
+  		 <form method="post" action="item-details.jsp" >
+  	 
+     <strong  style="font-size:20px;text-decoration:underline;font-style:italic;">1.Enter Customer id:</strong> 
+      <input type="text" name="custid" required><br><br>
+      <input type="submit" value="Submit">
+      </form>
+  		 </div>
+  		  <li><h2>Remove Item</h2></li>
+      <div class="itemrem">
+        <form method="post" action="remove-item.jsp" >
+  	
+      <strong  style="font-size:20px;text-decoration:underline;font-style:italic;">2.Enter Item id:</strong>
+      <input type="text" name="itemid" required><br><br>
+      <input type="submit" value="Submit">
+      </form>
+      </div>
+    
+     <li>
+     	<div>
+    	<h2><a href="addadmindp.html">Add Delivery Person (Click Here...)</a></h2>
+    </li>
+    </div>
+    <li><h2>Remove Delivery Person</h2></li>
+    <div class="dprem">
+      <form method="post" action="remove-dp.jsp" >
+  	 
+      <strong style="font-size:20px;text-decoration:underline;font-style:italic;">3.Enter Delivery Person Id:</strong>
+      <input type="text" name="dpid" required><br><br>
+      <input type="submit" value="Submit"> 
+      </form>
+    </div>
+
+    <li>
+    	<h2><a href="show-all.jsp">Show All Orders (Click Here...)</a></h2><br>
+    </li>
+    	<div class="button">
+ 		<form method="post" action="index.html" >
+ 		<input type="submit" value="Log Out">
+ 		</div> 
+ 	 </ul>
+  		
+  </body>
+</html>

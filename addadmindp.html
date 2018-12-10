@@ -1,0 +1,35 @@
+<style>
+h1
+{
+text-align:center;
+font-style:italic;
+background-color:black;
+opacity:0.9;
+color:white;
+}
+
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Delivery Person</title>
+</head>
+<body style="background-image:url(admindashboard.png);">
+  <h1>Add Delivery Person</h1>
+  <form  action="addadmindp.jsp" method="post">
+    <ul>
+    <li> <strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Enter Delivery Person Id</strong></li>
+        <input type="text" name="dpid" required><br><br>
+      <li> <strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Assign username</strong></li>
+      <input type="text" name="dpusername" required><br><br>
+      <li> <strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Assign password</strong></li>
+      <input type="text" name="dppass" required><br><br>
+      <input type="submit" name="submit">
+    </ul>
+
+
+
+  </form>
+
+</body>

@@ -1,0 +1,41 @@
+<style>
+h1
+{
+text-align:center;
+font-style:italic;
+background-color:black;
+opacity:0.8;
+color:white;
+}
+
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Item</title>
+</head>
+<body style="background-image:url(user.jpg);">
+<h1>Add Items</h1>
+  <form  action="adduseritem.jsp" method="post">
+    <ul>
+   <li><strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Enter Your Id</strong></li>
+      <input type="text" name="custid" required><br>
+   		<li><strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Enter Item Id</strong></li>
+      <input type="text" name="itemid" required><br>
+      <li><strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Enter type of item</strong></li>
+      <input type="text" name="itemtype" required><br>
+		<li><strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Enter weight of item</strong></li>
+      <input type="text" name="itemweight" required><br>
+      <li><strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Enter Pickup Address</strong></li>
+      <input type="text" name="itempickupadd" required><br>
+      <li><strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Enter Drop Address</strong></li>
+      <input type="text" name="itemdropadd" required><br><br>
+      <input type="submit" name="submit">
+    </ul>
+
+
+
+  </form>
+
+</body>

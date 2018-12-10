@@ -1,0 +1,69 @@
+<style>
+.button
+{
+float:right;
+}
+.viewitem
+{
+border:1.5px solid black;
+}
+.status{
+border:1.5px solid black;
+}
+h2{
+text-align:left;
+font-style:italic;
+background-color:intransit;
+opacity:1;
+color:red;
+}
+h1
+{
+text-align:center;
+font-style:italic;
+background-color:intransit;
+opacity:0.9;
+color:black;
+text-decoration:underline;
+}
+
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome Delivery Person</title>
+</head>
+<body style="background-image:url(dp.jpg);">
+ 	<h1>Welcome Delivery Person</h1>
+	<ul>
+	    <li><h2>View Item</h2></li>
+	    <div class="viewitem">
+	    	 <form action="orderdetails.jsp" method="post">
+	 	 	 <strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Enter Your id:</strong> 
+	 	 	<input type="text" name="dpid" required><br><br>
+	 	 	  <input type="submit" value="Submit"><br>
+	 	 	</form>
+	 	 	</div>
+	  </li>
+	  <br>
+	   <li><h2>Change Status</h2></li>
+	   <div class="status">
+	   <form action="change-status.jsp" method="post">
+	   <ul>
+	 	 	<li> <strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Enter Shipment id:</strong> 
+	 	 	<input type="text" name="sid" required><br></li>
+	 	 	<br><li> <strong  style="font-size:20px;text-decoration:underline;font-style:italic;">Select Status</strong> </li><br>
+	 	 	<input type="radio" name="status" value="Unpicked" checked><strong>Unpicked</strong> <br>
+  			<input type="radio" name="status" value="Delivered"><strong>Delivered</strong><br>
+  			<input type="radio" name="status" value="Intransit"><strong>In-Transit</strong><br><br>
+  			<input type="submit" value="Submit"><br>
+			 </form>
+			 </div>
+			 </li>
+	    </ul>
+	    <div class="button">
+	    <br><form method="post" action="index.html" >
+ 			<input type="submit" value="Log Out"> </form></div>
+</body>
+</html>

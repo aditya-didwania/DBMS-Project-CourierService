@@ -1,0 +1,105 @@
+<style>
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.imgcontainer1 {
+    text-align: left;
+     margin-top: 0;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+.imgcontainer2 {
+    text-align: right;
+     margin-top: -300px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 150px;
+}
+.button
+{
+right:5%;
+position:absolute;
+bottom:0;
+}
+h1
+{
+text-align:center;
+font-style:italic;
+background-color:black;
+opacity:0.8;
+color:white;
+}
+div.transbox {
+width:1920px;
+height:50px;
+ margin: 30px;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  }
+.additem
+{
+	background-color:#FFA100;
+	border: 1px solid:#FF4910; 
+	outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-style: italic;
+ 	right:90%;
+	position:absolute;
+}
+.removeitem{
+	background-color:#FFA100;
+	border: 1px solid:#FF4910; 
+	outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-style: italic;
+ 	right:50%;
+	position:absolute;
+}
+.checkstatus
+{
+background-color:#FFA100;
+	border: 1px solid:#FF4910; 
+	outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-style: italic;
+ 	right:5%;
+	position:absolute;
+}
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>welcome user</title>
+</head>
+<body style="background-image:url(user.jpg);">
+	<h1>Welcome User</h1>
+	<div class="transbox">
+	<a href="adduseritem.html" ><button class="additem">Add Item</button></a>
+	<a href="removeuseritem.html" ><button class="removeitem">Remove Item</button></a>
+	<a href="checkuserstatus.html"><button class="checkstatus">Check Status</button></a><br>
+	</div>
+	<div class="imgcontainer"><img  style="border:5px solid black;" src="body.jpg" class="img"></div> 
+	<div class="imgcontainer1"><img style="border:5px solid black;" src="body1.jpg" width="239" height="211" class="img1"></div> 
+	<div class="imgcontainer2"><img style="border:5px solid black;" src="body2.jpg" width="239" height="211" class="img2"></div> 
+	<div class="button">
+	<form method="post" action="index.html" >
+ 	<input type="submit" value="Log Out"> 
+ 	</form>
+ 	</div>
+	
+</body>
+</html>
