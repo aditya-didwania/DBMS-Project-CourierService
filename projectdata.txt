@@ -1,0 +1,90 @@
+INSERT INTO ITEM VALUES ('it1','electronics','20','mysore','bangalore');
+INSERT INTO ITEM VALUES ('it2','electronics','20','bangalore','newdelhi');
+INSERT INTO ITEM VALUES ('it3','electronics','30','hyderabad','bangalore');
+INSERT INTO ITEM VALUES ('it4','electronics','40','hyderabad','bangalore');
+INSERT INTO ITEM VALUES ('it5','electronics','25','assam','kanpur');
+INSERT INTO ITEM VALUES ('it6','electronics','30','kanpur','assam');
+INSERT INTO ITEM VALUES ('it7','electronics','100','ranchi','patna');
+INSERT INTO ITEM VALUES ('it8','stationary','120','patna','ranchi');
+INSERT INTO ITEM VALUES ('it9','stationary','150','indore','patna');
+INSERT INTO ITEM VALUES ('it10','stationary','200','kolkata','patna');
+INSERT INTO ITEM VALUES ('it11','accessories','40' ,'patna','bangalore');
+INSERT INTO ITEM VALUES ('it12','accessories','80','ranchi','kolkata');
+INSERT INTO ITEM VALUES ('it13','furniture','100','mysore','kolkata');
+INSERT INTO ITEM VALUES ('it14','furniture','300','patna','mysore');
+INSERT INTO ITEM VALUES ('it15','electronics','120','patna','ranchi');
+INSERT INTO ITEM VALUES ('it16','cloths','100','hyderabad', 'newdelhi');
+
+
+INSERT INTO SHIPMENT VALUES ('st1','20','Unpicked','mysore','bangalore','it1');
+INSERT INTO SHIPMENT VALUES ('st2','20','Unpicked','bangalore','newdelhi','it2');
+INSERT INTO SHIPMENT VALUES ('st3','30','Unpicked','hyderabad','bangalore','it3');
+INSERT INTO SHIPMENT VALUES ('st4','40','In Transit','hyderabad','bangalore','it4');
+INSERT INTO SHIPMENT VALUES ('st5','25','In Transit','assam','kanpur','it5');
+INSERT INTO SHIPMENT VALUES ('st6','30','In Transit','kanpur','assam','it6');
+INSERT INTO SHIPMENT VALUES ('st7','100','In Transit','ranchi','patna','it7');
+INSERT INTO SHIPMENT VALUES ('st8','120','In Transit','patna','ranchi','it8');
+INSERT INTO SHIPMENT VALUES ('st9','150','Unpicked','indore','patna','it9');
+INSERT INTO SHIPMENT VALUES ('st10','200','In Transit','kolkata','patna','it10');
+INSERT INTO SHIPMENT VALUES ('st11','40','In Transit','patna','bangalore','it11');
+INSERT INTO SHIPMENT VALUES ('st12','80','In Transit','ranchi','kolkata','it12');
+INSERT INTO SHIPMENT VALUES ('st13','100','In Transit','mysore','kolkata','it13');
+INSERT INTO SHIPMENT VALUES ('st14','300','Unpicked','patna','mysore','it14');
+INSERT INTO SHIPMENT VALUES ('st15','120','In Transit','patna','ranchi','it15');
+INSERT INTO SHIPMENT VALUES ('st16','100','Unpicked','hyderabad','newdelhi','it16');
+
+INSERT INTO CUSTOMER VALUES ('ct1','aditya','345623445','it1','adi1N','3456234452');
+INSERT INTO CUSTOMER VALUES ('ct2','priya', '998907658','it2','pri2N','9989076587');
+INSERT INTO CUSTOMER VALUES ('ct3','sanjana', '988907656','it3','san3N','9889076565');
+INSERT INTO CUSTOMER VALUES ('ct4','ravi','745567934','it4','rav4N','7455679345');
+INSERT INTO CUSTOMER VALUES ('ct5','kumar', '897086234','it5','kum5F','8970862340');
+INSERT INTO CUSTOMER VALUES ('ct6','sonam','775612023','it6','son6F','7756120238');
+INSERT INTO CUSTOMER VALUES ('ct7','om','875161100','it7','om7F','8751611001');
+INSERT INTO CUSTOMER VALUES ('ct8','raju','776613891','it8','raj8F','7766138911');
+INSERT INTO CUSTOMER VALUES ('ct9','satyam','998677653','it9','sat9F','9986776531');
+INSERT INTO CUSTOMER VALUES ('ct10','mohan','898977653','it10','moh10F',' 8989776530');
+INSERT INTO CUSTOMER VALUES ('ct11','sohan','962021345','it11','soh11F','9620213456');
+INSERT INTO CUSTOMER VALUES ('ct12','ramesh','967544322','it12','ram12F','9675443222');
+INSERT INTO CUSTOMER VALUES ('ct13','vivek','636134256','it13','viv13S','6361342564');
+INSERT INTO CUSTOMER VALUES ('ct14','kovid','234569620','it14','kov14S','23456962021');
+INSERT INTO CUSTOMER VALUES ('ct15','ajay','196202176','it15','aja15S','1962021765');
+INSERT INTO CUSTOMER VALUES ('ct16','karthik','196202179','it16','karth12','56890517');
+
+
+
+INSERT INTO DELIVERY_PERSON VALUES ('dp1','laptop','mysore','bangalore','ravi1','r1m','st1');
+INSERT INTO DELIVERY_PERSON VALUES ('dp2','laptop','bangalore','newdelhi','rohit2','r2b','st2');
+INSERT INTO DELIVERY_PERSON VALUES ('dp3','mouse','hyderabad','bangalore','rakesh2','r3h','st3');
+INSERT INTO DELIVERY_PERSON VALUES ('dp4','keyword','hyderabad','bangalore','rajesh','r4b','st4');
+INSERT INTO DELIVERY_PERSON VALUES ('dp5','tv','assam', 'kanpur','kant5','k5a','st5');
+INSERT INTO DELIVERY_PERSON VALUES ('dp6','head phone','kanpur','assam','sanju6','s6k','st6');
+INSERT INTO DELIVERY_PERSON VALUES ('dp7','mobile','ranchi','patna','sashi7','s7r','st7');
+INSERT INTO DELIVERY_PERSON VALUES ('dp8','book','patna','ranchi','sanjay','s8p','st8');
+INSERT INTO DELIVERY_PERSON VALUES ('dp9','book','indore','patna','ryan','r9i','st9');
+INSERT INTO DELIVERY_PERSON VALUES ('dp10','notebook','kolkata','patna','swami10','s10p','st10');
+INSERT INTO DELIVERY_PERSON VALUES ('dp11','bag','patna','bangalore','nishant11','n11p','st11');
+INSERT INTO DELIVERY_PERSON VALUES ('dp12','shoe','ranchi','kolkata','anand12','a12r','st12');
+INSERT INTO DELIVERY_PERSON VALUES ('dp13','table','mysore','kolkata','anant13','a13m','st13');
+INSERT INTO DELIVERY_PERSON VALUES ('dp14','chair','patna','mysore','rakshit014','r14p','st14');
+INSERT INTO DELIVERY_PERSON VALUES ('dp15','charger','patna','ranchi','ranjeet15','r15p','st15');
+INSERT INTO DELIVERY_PERSON VALUES ('dp16','jacket','hyderabad','newdelhi','dipak16','d16h','st16');
+
+
+
+INSERT INTO ADMIN VALUES ('1','anuj','345637211','it1','anu1','3456372112');
+INSERT INTO ADMIN VALUES ('2','amit','632453165','it2','ami2','6324531653');
+INSERT INTO ADMIN VALUES ('3','aman','765543265','it3','ama3','7655432654');
+INSERT INTO ADMIN VALUES ('4','hemant','212427643','it4','hem4','2124276543');
+INSERT INTO ADMIN VALUES ('5','kamal','654326754','it5','kam5','6543267543');
+INSERT INTO ADMIN VALUES ('6','raj','453256773','it6','raj6','4532567743');
+INSERT INTO ADMIN VALUES ('7','rahul','564348764','it7','rah7','5643487642');
+INSERT INTO ADMIN VALUES ('8','ankit','965432766','it8','ank8','9654327665');
+INSERT INTO ADMIN VALUES ('9','abhishek','654323465','it9','abh9','6543234654');
+INSERT INTO ADMIN VALUES ('10','ranbir','564327863','it10','ran10','5643278623');
+INSERT INTO ADMIN VALUES ('11','randhir','567433252','it11','ran11','5674332542');
+INSERT INTO ADMIN VALUES ('12','anup','636134564','it12','anu12','6361342564');
+INSERT INTO ADMIN VALUES ('13','varun','962030466','it13','var13','9620304066');
+INSERT INTO ADMIN VALUES ('14','dilip','977145363','it14','dil14','9771453263');
+INSERT INTO ADMIN VALUES ('15','salim','890456423','it15','sal15','8904564323');
+INSERT INTO ADMIN VALUES ('16','vinod','776543785','it16','vin16','7765437865');
+

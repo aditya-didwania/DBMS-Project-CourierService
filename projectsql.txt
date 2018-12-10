@@ -1,0 +1,43 @@
+CREATE TABLE ITEM
+(item_id varchar(6) PRIMARY KEY,
+type VARCHAR(20),
+weight VARCHAR(4),
+address_of_sender VARCHAR(20),
+address_of_receiver VARCHAR(20));
+
+CREATE TABLE SHIPMENT
+(s_id varchar (6) PRIMARY KEY,
+weight VARCHAR(4),
+status  VARCHAR(20),
+address_of_sender VARCHAR(20),
+address_of_receiver VARCHAR(20),
+item_id varchar(6),
+foreign key(item_id)  REFERENCES  ITEM(item_id) ON DELETE CASCADE);
+
+CREATE TABLE CUSTOMER
+(c_id  VARCHAR(20) PRIMARY KEY,
+name VARCHAR(20),
+mob_no VARCHAR(10),
+item_id varchar(6),
+username VARCHAR(20) NOT NULL,
+password  VARCHAR(20) NOT NULL,
+foreign key(item_id)  REFERENCES  ITEM(item_id) ON DELETE SET NULL);
+
+CREATE TABLE DELIVERY_PERSON
+(dp_id varchar (6) PRIMARY KEY,
+item_detail VARCHAR(20),
+address_of_sender VARCHAR(20),
+address_of_receiver VARCHAR(20),
+username VARCHAR(20) NOT NULL,
+password  VARCHAR(20) NOT NULL,
+s_id  varchar(6),
+foreign key(s_id) REFERENCES  SHIPMENT(s_id) ON DELETE SET NULL);
+
+CREATE TABLE ADMIN
+(a_id varchar(6) PRIMARY KEY,
+NAME VARCHAR(20),
+mob_no VARCHAR(20),
+item_id varchar(6),
+username VARCHAR(20) NOT NULL,
+password  VARCHAR(20) NOT NULL,
+foreign key(item_id)  REFERENCES  ITEM(item_id) ON DELETE SET NULL);
